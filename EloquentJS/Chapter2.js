@@ -17,10 +17,39 @@
 // }
 
 //calculate and show the value of 2^10.
-let result = 1;
-let counter = 0;
-while (counter < 10) {
-  result = result * 2;
-  counter = counter + 1;
+// let result = 1;
+// let counter = 0;
+// while (counter < 10) {
+//   result = result * 2;
+//   counter = counter + 1;
+// }
+// console.log(result);
+
+// for (let current = 20; ; current = current + 1) {
+//   if (current % 7 == 0) {
+//     console.log(current);
+//     break;
+//   }
+// }
+//What is with the two ;;?  The part before the ; initializes the loop and the second part of the expression check whether the loop must continue.
+
+//EXCERCISES
+
+//Write a loop that makes seven calls to console.log to output the following triangle
+//#
+//##
+//###
+//####
+//#####
+//######
+//#######
+
+for (let string = "#"; string <= "#######"; string = string += "#") {
+  console.log(string);
 }
-console.log(result);
+//refactor
+
+for (let string = "#"; string.length < 8; string += "#") {
+  console.log(string);
+}
+//using string.length is more efficient than fully writing out the desired length
